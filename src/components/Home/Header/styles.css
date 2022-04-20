@@ -21,3 +21,13 @@
   color: #a9a9a9;
   font-weight: 500;
 }
+.blink_me {
+  animation: blinker 1s linear infinite;
+  margin: 2%;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

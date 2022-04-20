@@ -8,6 +8,8 @@ import './App.css';
 import Blog from './pages/Blog';
 import Home from './pages/Home';
 import RichTextEditor from './components/RichTextEditor';
+import CustomEditor from './pages/Editor';
+
 
 const App = () => {
   
@@ -17,6 +19,7 @@ const App = () => {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/blog/:id' component={Blog} />
+        <Route path='/editor' component={CustomEditor} />
         <Redirect to='/' />
       </Switch>
      {/* <RichTextEditor /> */}
